@@ -1,0 +1,15 @@
+package Gamze;
+
+import java.util.Scanner;
+
+public class Kilometreye_Gore_Toplam_Odenecek_Tutar {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Aracınız kilometre başına kaç kuruş yakıyor?: (Örnek 0,32)");
+        double kurus= scanner.nextDouble();
+        System.out.println("Aracınızla kaç kilometre gittiniz?: ");
+        int km=scanner.nextInt();
+        
+        System.out.println("Toplam ödemeniz gereken tutar: "+ (kurus*km)+ " TL");
+    }
+}
